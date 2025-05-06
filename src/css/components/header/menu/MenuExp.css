@@ -1,0 +1,37 @@
+.submenuWrapper {
+  animation: slideIn 0.5s forwards;
+  overflow-x: hidden;
+}
+
+.submenuList {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.submenuLink {
+  color: var(--gold);
+  font-size: var(--font-sm);
+  text-transform: none;
+}
+
+.submenuItem hr {
+  background-color: var(--gold);
+  border: none;
+  height: 1px;
+  width: 100%;
+}
+
+.submenuItem:first-child hr {
+  margin-top: 0;
+}
+
+.submenuItem:last-child{
+  margin-bottom: 1rem;
+}
+
+@keyframes slideIn {
+  100% {
+    opacity: 1;
+  }
+}

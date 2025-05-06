@@ -1,0 +1,108 @@
+.menuBackdrop {
+  background-color: #0000006a;
+  height: 100svh;
+  width: 100%;
+}
+
+.menuBackdrop.closing {
+  opacity: 0;
+}
+
+.sideMenu {
+  animation: slideIn 0.5s forwards;
+  background-color: var(--background);
+  height: 100svh;
+  position: fixed;
+  right: -300px;
+  top: 0;
+  transition: all 0.75s ease;
+  width: 100%;
+  z-index: 99999999;
+  opacity: 1;
+}
+
+.sideMenu.closing {
+  opacity: 0;
+  width: 1px;
+}
+
+.closeMenuBtn {
+  background: none;
+  border: none;
+  outline: none;
+  position: absolute;
+  right: 1.5rem;
+  top: 1.5rem;
+}
+
+.sideMenuList {
+  margin-top: 9rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.sideMenuItem {
+  border-bottom: 1px solid var(--gold);
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  transition: min-height 0.3s ease;
+  width: 100%;
+}
+
+.sideMenuItem, .sideMenuItemRow{
+    height: 60px;
+}
+
+.sideMenuItemRow{
+  display: flex;
+}
+
+.sideMenuItemExpandable {
+    display: flex;
+    flex-direction: column;
+}
+
+.sideMenuItem.expanded {
+    height: 100%;
+    min-height: 100%;
+}
+
+.sideMenuLink {
+  background: none;
+  border: none;
+  color: var(--gold);
+  height: 100%;
+  margin-right: 1rem;
+  padding: 0;
+  text-align: left;
+  transition: background-size 0.4s;
+  width: 136px;
+}
+
+.toggleSubmenuBtn {
+  background: none;
+  border: none;
+}
+
+@media (min-width: 550px) {
+  .sideMenu {
+    width: 300px;
+  }
+
+  .sideMenuLink{
+    min-width: 155px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .sideMenu {
+    display: none;
+  }
+}
+
+@keyframes slideIn {
+  100% {
+    right: 0;
+  }
+}

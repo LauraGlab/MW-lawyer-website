@@ -1,0 +1,105 @@
+.aboutImg__section{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1rem 0;
+    overflow-x: hidden;
+}
+
+.aboutImg{
+    width: 100%;
+}
+
+.aboutText__section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem 5% 1.5rem;
+}
+
+.lawyerAbout, .h2About, .aboutText, .educationTitle, .educationAbout{
+    width: 90%;
+}
+
+.lawyerAbout {
+    color: var(--gold);
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.h2About {
+    color: var(--gold);
+    font-size: calc(6vw + .5em);
+    font-weight: 600;
+    margin: .5rem 0;
+    text-transform: uppercase;
+}
+
+.aboutText{
+    margin: 0.5rem 0;
+}
+
+.educationTitle {
+    color: var(--gold);
+    font-size: var(--font-xl);
+    margin-bottom: 0;
+    margin-top: 0.5rem;
+    text-transform: uppercase;
+}
+
+.educationAbout{
+    margin: 0.5rem 0 1.5rem;
+}
+
+@media(min-width: 480px){
+    .lawyerAbout {
+        font-size: var(--font-md);
+    }
+}
+
+@media(min-width: 550px){
+    .aboutImg{
+        height: 100%;
+        margin-left: 0;
+        object-fit: cover;
+        width: 100%;
+    }
+}
+
+@media(min-width: 768px){
+    .aboutText__section {
+        padding: 2.5rem 5%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .aboutSection{
+        display: grid;
+        grid-template-columns: 53% 47%;
+        padding-top: 3rem;
+    }
+    
+    .aboutText__section{
+        padding-right: 1rem;
+    }
+
+    .h2About {
+        font-size: calc(5vw + .5em);
+    }
+
+    .educationAbout {
+        margin-bottom: 1rem;
+    }
+}
+
+@media (min-width: 1400px) {
+    .aboutSection{
+        grid-template-columns: 45% 55%;
+        padding: 0rem 3rem 0 0;
+    }
+
+    .aboutText__section {
+        padding-right: 5rem;
+    }
+}

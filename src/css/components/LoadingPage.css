@@ -1,0 +1,29 @@
+.loading{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100svh;
+  justify-content: center;
+  left:0;
+  position: fixed;
+  width: 100%;
+  z-index: 99999999999;
+}
+
+.loadingLogo{
+  animation: blink 1s linear infinite;
+  height: 100px;
+  width: 100px;
+}
+
+@keyframes blink{
+  0% {
+    opacity: 0;
+  }
+  50%{
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}

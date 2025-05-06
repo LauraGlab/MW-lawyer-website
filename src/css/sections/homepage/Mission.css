@@ -1,0 +1,103 @@
+.missionSection {
+    animation: animate-in-and-out 2s linear infinite;
+    animation-timeline: view();
+    background: no-repeat center/cover url("./../../../assets/serviceWhite.png");
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    min-height: 800px;
+    text-align: center;
+}
+
+.missionTitle {
+    margin: 1rem 0 0;
+    width: 100%;
+}
+
+.missionText__section {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.missionText {
+    width: 80%;
+    margin-bottom: 4rem;
+}
+
+.missionButton__section {
+    width: 100%;
+}
+
+.missionButton {
+    background-color: transparent;
+    border: 0.0625rem solid var(--gold);
+    color: var(--gold);
+    cursor: pointer;
+    font-size: var(--font-sm);
+    padding: 0.9rem 0;
+    transition: background-color 0.3s ease;
+    width: 50%;
+}
+
+.missionButton:hover {
+  background-color: var(--gold-bckgr);
+}
+
+@media (min-width: 500px) {
+    .missionButton {
+        width: 40%;
+    }
+}
+
+@media (min-width: 768px) {
+    .missionSection {
+        align-items: flex-start;
+        padding-left: 5rem;
+        text-align: left;
+    }
+
+    .missionTitle {
+        width: 730px;
+    }
+
+    .missionText__section {
+        display: block;
+        width: auto;
+    }
+
+    .missionText{
+        margin-bottom: 3rem;
+        width: 500px;
+    }
+
+    .missionButton{
+        width: 200px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .missionSection {
+        padding-left: 8rem;
+    }
+
+    .missionButton {
+        width: 275px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .missionTitle {
+        margin: 0;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .missionSection {
+        background-image: url("./../../../assets/serviceDark.png");
+    }
+}

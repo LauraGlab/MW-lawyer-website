@@ -1,0 +1,174 @@
+.contactSection {
+    -webkit-animation: linear animate-in-and-out;
+    animation: linear animate-in-and-out;
+    animation-timeline: view();
+    background: no-repeat;
+    background-image: url("./../../../assets/contactWhite.png");
+    background-size: cover;  
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    margin: 0 auto;
+    min-height: 600px;
+    overflow-x: hidden;
+    padding: 2rem 0;
+    width: 100%;
+}
+
+.contactHeader{
+    margin: 0 auto;
+    width: 90%;
+}
+
+.contactTitle, .contactSubTitle {
+    margin: 0;
+    text-align: center;
+}
+
+.contactTitle{
+    width: 100%;
+}
+
+.contactSubTitle__section{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.contactSubTitle {
+    color: var(--gold);
+    padding-top: 1rem;
+    width: 90%;
+}
+
+.hrContact {
+    background-color: var(--gold);
+    border: 1px solid var(--gold);
+    color: var(--gold);
+    height: 0.0625rem;
+    margin: 2rem 20% 0;
+}
+
+.inputFields {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem; 
+    overflow: hidden;
+    padding: 0 5%;
+    position: relative;
+    width: 90%;
+}
+
+.inputField {
+    background-color: rgba(255, 255, 255, 0.485);
+    border: 0.0625rem solid #ffffff00;
+    border-radius: 0.1875rem; 
+    outline: none;
+    padding: 1.1rem 1.75rem; 
+}
+
+.inputField:focus {
+    border: 0.0625rem solid var(--gold); 
+}
+
+input:-internal-autofill-selected {
+    background-color: rgba(255, 255, 255, 0.485);
+    border: 0.0625rem solid var(--gold); 
+}
+
+#message{
+    font-family: "Gothic A1", sans-serif;
+    height: 10rem; 
+    resize: none;
+}
+
+.errorWrapper{
+    height: 1.75rem;
+    position: relative;
+}
+
+.errorText {
+    color: var(--gold);
+    font-size: var(--font-xxs); 
+    font-weight: 700;
+    margin-bottom: 0;
+    margin-top: 0.25rem;
+}
+
+.submitBtn__section {
+    align-items: end;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    margin-top: 0.75rem;
+    width: 100%;
+}
+
+.submitBtn {
+    background: transparent;
+    border: 0.0625rem solid var(--gold); 
+    color: var(--gold);
+    padding: 1rem 1.5rem; 
+    transition: all 0.5s linear;
+    width: 100%;
+    z-index: 9;
+}
+
+.submitBtn:hover {
+    background-color: rgba(137, 116, 85, 0.266);
+    transition: all 1s;
+}
+
+@media (min-width: 1024px) {
+    .contactHeader, .inputFields{
+        align-items: end;
+        display: flex;
+        flex-direction: column;
+        justify-content: right;
+        margin: 0 auto;
+        padding: 0;
+        width: 90%;
+    }
+
+    .contactTitle, .contactSubTitle {
+        text-align: right;
+    }
+
+    .contactTitle{
+        width: 100%;
+    }
+
+    .contactSubTitle__section {
+        align-items: end;
+    }
+
+    .hrContact {
+        margin: 1rem 0 2rem;
+        width: 45%;
+    }
+
+    .contactSubTitle, .inputField, .submitBtn {
+        width: 45%;
+    }
+
+    .errorName, .errorEmail, .errorText {
+        text-align: right;
+    }
+}
+
+@media(prefers-color-scheme: dark) {
+    .contactSection {
+        background-image: url("./../../../assets/contactDark.png");
+    }
+
+    .inputFields input {
+        background-color: rgba(122, 122, 122, 0.341);
+    }
+
+    .inputFields textarea {
+        background-color: rgba(122, 122, 122, 0.341);
+    }
+}

@@ -1,0 +1,55 @@
+.logo__section {
+  align-items: center;
+  animation: logoShrink linear forwards;
+  animation-range: 0vh 90vh;
+  animation-timeline: scroll();
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  left: 50%; 
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transform-origin: center;
+  width: 100%;
+}
+
+.logo {
+  aspect-ratio: 1 / 1;
+  background-image: url(./../../../assets/logo1.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  max-width: 180px;
+  width: 50vw;
+  padding: 0;
+}
+
+@media (min-width: 480px) {
+  .logo {
+    max-width: 100%;
+    width: 18.75rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .logo {
+    width: 18vw;
+  }
+}
+
+@keyframes logoShrink {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(0.25);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .logo {
+    background-image: url("./../../../assets/logo.svg");
+  }
+}

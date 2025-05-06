@@ -1,0 +1,18 @@
+.app{
+  position: relative;
+  display: block;
+  height: 100svh;
+}
+
+.heroWrapper{
+  position: absolute;
+  width: 100%;
+  z-index: 99;
+}
+
+.main{
+  height: 100%;
+  padding-top: 100vh;
+  position: relative;
+  width: 100%;
+}

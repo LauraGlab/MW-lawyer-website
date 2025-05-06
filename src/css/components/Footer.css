@@ -1,0 +1,95 @@
+.footer {
+  color: var(--gold);
+  width: 100%;
+}
+
+.footerContent {
+  padding: 3rem 1rem 0.5rem;
+  border-bottom: 1px solid var(--gold);
+}
+
+.footerSection {
+  display: flex;
+  flex-direction: column;
+}
+
+.footerInfo,
+.footerContact {
+  border-bottom: 1px solid var(--gold);
+  padding-bottom: 0.5rem;
+}
+
+.footerLogo {
+  width: 3rem;
+  height: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.footerDescription {
+  max-width: 22rem;
+}
+
+.footerHeading {
+  font-weight: 600;
+  margin: 1rem 0;
+}
+
+address{
+  font-style: normal;
+}
+
+address p{
+  margin-top: 0;
+}
+
+.footerAddress a {
+  color: var(--gold);
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: none;
+}
+
+.footerLinks {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footerLinks li {
+  padding-bottom: 0.75rem;
+}
+
+.footerLinks a {
+  color: var(--gold);
+  text-decoration: none;
+  text-transform: none;
+}
+
+.footerBottom {
+  text-align: center;
+}
+
+.footerCredit {
+  font-size: var(--font-xxs);
+  color: var(--gold);
+}
+
+@media (min-width: 768px) {
+  .footerContent {
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: repeat(3, 1fr);
+    padding-bottom: 1.5rem;
+  }
+
+  address p{
+    margin-bottom: 0.5rem;
+  }
+
+  .footerInfo,
+  .footerContact {
+    border-bottom: none;
+    border-right: 1px solid var(--gold);
+    padding-right: 2rem;
+  }
+}

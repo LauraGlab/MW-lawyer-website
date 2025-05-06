@@ -1,0 +1,21 @@
+.error{
+  align-items: center;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  height: 100svh;
+  justify-content: center;
+  left:0;
+  position: fixed;
+  width: 100%;
+  z-index: 99999999999;
+}
+
+.errorLogo{
+  height: 100px;
+  width:100px;
+}
+
+.errorText{
+  font-size: 14px;
+}

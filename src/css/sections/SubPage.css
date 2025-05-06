@@ -1,0 +1,128 @@
+.subpageSection {
+    min-height: 100vh;
+    overflow-y: hidden;
+    width: 100%;
+}
+
+.logoSubpage {
+    height: 80px;
+    padding: 1rem 0 0 2rem;
+}
+
+.subpageContent {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.introSection {
+    padding: 2rem;
+}
+
+.dividerGold {
+    background-color: var(--gold);
+    border: none;
+    color: var(--gold);
+    height: 3px;
+    margin: 2rem 0;
+    width: 50px;
+}
+
+.introSection p {
+    width: 100%;
+}
+
+.imageSubpage {
+    height: calc(40vw + .5em);
+    margin-top: 1rem;
+    width: calc(73vw + .5em);
+}
+
+.detailsSection {
+    background-color: #89745558;
+    color: var(--gold);
+    margin: 2rem 0;
+    padding: 4rem 2rem;
+    width: 100%;
+}
+
+.subheadingSubpage {
+    font-size: var(--font-subheading);
+    margin: 1rem 0;
+    width: 90%;
+}
+
+.listSubpage {
+    padding-left: 0.5rem;
+}
+
+.listSubpage li {
+    list-style-type: disc;
+    padding-bottom: .5rem;
+    width: 90%;
+}
+
+@media(min-width: 768px) {
+    .imageSubpage {
+        height: calc(52vw + .5em);
+        width: calc(85vw + .5em);
+    }
+}
+
+@media(min-width: 1024px) {
+    .introSection p {
+        font-size: 22px;
+    }
+
+    .imageSubpage {
+        height: 100%;
+        margin-top: 0;
+        height: auto;
+        width: 100%;
+    }
+
+    .detailsSection {
+        padding: 2rem 3rem;
+    }
+}
+
+@media(min-width: 1400px) {
+    .introSection {
+        display: grid;
+        font-size: 18px;
+        grid-template-columns: 50% 50%;
+        padding: 2rem 4rem;
+        width: 100%;
+    }
+
+    .textSubpage {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-right: 2rem;
+    }
+
+    .headingSubpage {
+        margin: 0;
+    }
+
+    .imageSubpageWrapper {
+        align-items: end;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .imageSubpage {
+        margin-top: 0;
+        height: auto;
+        width: 100%;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .detailsSection {
+        color: var(--white);
+    }
+}

@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1');
+
+:root {
+  --black: #3a3a3a;
+  --white: #e6e6e6;
+  --background: var(--white);
+  --text-color: var(--black);
+  --black-hover: #989898;
+  --gold: #897455;
+  --gold-bckgr: #89745556;
+  --gray: #77766C;
+  --lighter-gold: #C7B191;
+  --font-xxs: 0.75rem;
+  --font-xs: 0.9rem;
+  --font-sm: 1rem;
+  --font-md: 1.15rem;
+  --font-lg: 1.3rem;
+  --font-xl: 1.75rem;
+  --font-xxl: 2.3rem;
+  --font-subheading: var(--font-xl);
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 14px;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text-color);
+  font-family: "Gothic A1", sans-serif;
+  font-size: var(--font-sm);
+  margin: 0;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.app{
+  position: relative;
+  display: block;
+  height: 100svh;
+}
+
+a {
+  color: var(--text-color);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+button span {
+  z-index: 2;
+}
+
+ul{
+  list-style-type: none;
+}
+
+.subheading{
+  color: var(--gold);
+  font-size: var(--font-subheading);
+  text-transform: uppercase;
+}
+
+.hrElement{
+  background-color: var(--gold);
+  border: 1px solid var(--gold);
+  margin: 1rem 0;
+  text-align: left;
+  width: 50%;
+}
+
+@keyframes animate-in-and-out {
+	entry 0%  {
+		opacity: 0;
+	}
+	entry 100%  {
+		opacity: 1;
+	}
+
+	exit 0% {
+		opacity: 1;
+	}
+	exit 100% {
+		opacity: 0;
+	}
+}
+
+@media(min-width: 480px){
+  :root{
+    --font-subheading: 6vw;
+  }
+}
+
+@media(min-width: 768px){
+  :root{
+    --font-subheading: 3.5rem;
+  }
+
+  html{
+    font-size: 16px;
+  }
+
+  button{
+    font-size: var(--font-md);
+  }
+
+  .subheading{
+    line-height: 110%;
+  }
+
+  .hrElement{
+    width: 40%;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: var(--black);
+    --text-color: var(--white);
+  }
+
+  #header{
+    --gold-bckgr: #585858c7; 
+  }
+}
