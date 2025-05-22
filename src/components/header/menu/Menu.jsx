@@ -115,8 +115,6 @@ export default function Menu({ onClose }) {
           })}
         </ul>
       </nav>
-
-      <div className={`menuBackdrop ${animation ? "closing" : ""}`} />
     </>
   );
 }
