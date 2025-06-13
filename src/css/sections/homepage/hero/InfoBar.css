@@ -47,7 +47,7 @@
     cursor: pointer;
     display: flex;
     flex-direction: row;
-    font-size: var(--font-lg);
+    font-size: var(--font-md);
     height: 5vh;
     justify-content: center;
     margin-right: 2rem;
