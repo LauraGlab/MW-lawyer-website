@@ -100,10 +100,6 @@ ul{
     font-size: 16px;
   }
 
-  button{
-    font-size: var(--font-md);
-  }
-
   .subheading{
     line-height: 110%;
   }
